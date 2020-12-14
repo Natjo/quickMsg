@@ -1,0 +1,29 @@
+@keyframes quickMsg-display{
+	from{
+		transform: translateY(100%);
+	}
+}
+@keyframes quickMsg-hide{
+	to{
+		transform: translateY(100%);
+	}
+}
+.quickMsg{
+	position: fixed;
+	z-index: 2000;
+	bottom: 0;
+	left: calc(50% - 110px);
+	width: 220px;
+	min-height: 100px;
+	background: bisque;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 15px 15px 0 0;
+	box-shadow: 0 0 30px -5px rgba(0,0,0,0.5);
+	animation: quickMsg-display .4s ease;
+	
+	&.hide{
+		animation: quickMsg-hide .4s ease both;
+	}
+}
