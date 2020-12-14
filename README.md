@@ -9,6 +9,7 @@ Add a mini modal just for few seconds to show message.
 | Parameter | Type | Default | Description |
 | ------ | ------ | ------ | ------ |
 | value | string | - | Message to show |
+| durarion | number | - | Time before hide |
 
 
 ## Usage
