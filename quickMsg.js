@@ -8,3 +8,5 @@ const QuickMsg = (content, duration) => {
 		el.addEventListener('animationend', () => el.remove(), {once:true});
 	}, duration);
 }
+
+export default QuickMsg;
