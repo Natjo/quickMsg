@@ -3,11 +3,10 @@
  * @description 
  * Add message in a small box
  *
- * @param content - message to show
- * @param duration - duration of showing box
+ * @param {string} content - message to show
+ * @param {number} duration - duration of showing box
  * 
  */
-
 const QuickMsg = (content, duration) => {
 	const el = document.createElement('div');
 	el.className = 'quickMsg';
@@ -20,5 +19,6 @@ const QuickMsg = (content, duration) => {
 		el.addEventListener('animationend', () => el.remove(), {once:true});
 	}, duration);
 }
+
 
 export default QuickMsg;
